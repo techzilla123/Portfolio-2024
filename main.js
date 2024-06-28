@@ -29,7 +29,7 @@ let clipNames = [
 let projects = [
   {
     image: 'textures/project-spaze.webp',
-    url: 'https://thebearss.xyz/',
+    url: 'https://thebearss.com/',
   },
   {
     image: 'textures/project-myteachers.jpg',
