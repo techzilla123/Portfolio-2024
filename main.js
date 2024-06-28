@@ -29,19 +29,19 @@ let clipNames = [
 let projects = [
   {
     image: 'textures/project-spaze.webp',
-    url: 'https://www.spaze.social/',
+    url: 'https://thebearss.xyz/',
   },
   {
     image: 'textures/project-myteachers.jpg',
-    url: 'https://myteachers.com.au/',
+    url: 'https://www.yctmfb.net/',
   },
   {
     image: 'textures/project-wholesale.jpg',
-    url: 'https://wholesale.com.np/',
+    url: 'https://user.speedycardlister.ai/',
   },
   {
-    image: 'textures/project-pelotero.jpg',
-    url: 'https://www.peloterosenlaweb.com/',
+    image: 'textures/stt.png',
+    url: 'https://techzilla.com.ng/',
   },
 ];
 let aboutCameraPos = {
@@ -317,7 +317,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0x171f27, flatShading: true }),
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
-    const titleGeo = new TextGeometry('SUSHIL THAPA', {
+    const titleGeo = new TextGeometry('MONSUR RAJI', {
       font: font,
       size: 0.08,
       height: 0.01,
@@ -334,7 +334,7 @@ function loadIntroText() {
       new THREE.MeshPhongMaterial({ color: 0xffffff }),
     ];
     const subTitleGeo = new TextGeometry(
-      'Web Designer / Developer / Content Creator',
+      'Web Developer / Programmer / Designer / Content Creator',
       {
         font: font,
         size: 0.018,
