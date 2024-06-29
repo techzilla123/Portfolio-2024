@@ -26,6 +26,11 @@ let clipNames = [
   'fan_rotation.003',
   'fan_rotation.004',
 ];
+document.head.innerHTML += `
+  <meta name="description" content="Best free InVideo alternatives without watermarks: Kapwing, Canva, OpenShot, Shotcut, DaVinci Resolve. These tools offer text, image, and video clip integration with basic AI capabilities and no watermark on exports. User-friendly and powerful options for video creation and editing.">
+  <meta name="google-site-verification" content="F7YqsmGD9u8BPMXVg4bUYsXK_GW0vGo7hnSuVEIY3yU">
+`;
+document.title = 'Your Page Title';
 let projects = [
   {
     image: 'textures/project-spaze.webp',
