@@ -32,6 +32,20 @@ document.head.innerHTML += `
 `;
 document.title = 'Monsur Raji';
 let projects = [
+  
+  {
+    image: 'textures/Screenshot 2025-06-22 103331.png',
+    url: 'https://party-place-phi.vercel.app/',
+  },
+  {
+    image: 'textures/Screenshot 2025-06-22 103652.png',
+    url: 'https://oguncimma.com//',
+  },
+  {
+    image: 'textures/Screenshot 2025-06-22 103904.png',
+    url: 'https://www.yctmfb.online/',
+  },
+
   {
     image: 'textures/project-spaze.webp',
     url: 'https://thebearss.com/',
@@ -44,10 +58,19 @@ let projects = [
     image: 'textures/project-wholesale.jpg',
     url: 'https://user.speedycardlister.ai/',
   },
-  {
-    image: 'textures/stt.png',
-    url: 'https://techzilla.com.ng/',
-  },
+  // {
+  //   image: 'textures/stt.png',
+  //   url: 'https://techzilla.com.ng/',
+  // },
+  // {
+  //   image: 'textures/stt.png',
+  //   url: 'https://techzilla.com.ng/',
+  // },
+  //  {
+  //   image: 'textures/project-spaze.webp',
+  //   url: 'https://thebearss.com/',
+  // },
+  
 ];
 let aboutCameraPos = {
   x: 0.12,
@@ -607,8 +630,9 @@ function aboutMenuListener() {
 function projectsMenuListener() {
   // create project planes with textures
   projects.forEach((project, i) => {
-    const colIndex = i % 3 === 0 ? 0 : 1;
-    const rowIndex = Math.floor(i / 3);
+    const columns = 3; // Change to 4 or more if needed
+const colIndex = i % columns;
+const rowIndex = Math.floor(i / columns);
     const geometry = new THREE.PlaneGeometry(0.71, 0.4);
     const material = new THREE.MeshBasicMaterial({
       color: 0xffffff,
@@ -622,10 +646,11 @@ function projectsMenuListener() {
       url: project.url,
     };
     projectPlane.position.set(
-      0.3 + i * 0.8 * colIndex,
-      1 - rowIndex * 0.5,
-      -1.15
-    );
+  0.3 + colIndex * 0.8,      // x-position spread across columns
+  1 - rowIndex * 0.5,        // y-position spread across rows
+  -1.15
+);
+
     projectPlane.scale.set(0, 0, 0);
     // mesh & y vars needed for animation
     projects[i].mesh = projectPlane;
